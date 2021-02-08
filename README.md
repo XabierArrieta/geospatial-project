@@ -6,9 +6,9 @@
 
 Este es un proyecto que lo he realizado durante el Bootcamp de Data Anatlytics en [Ironhack](https://www.ironhack.com/es/data-analytics) Madrid.
 
-# Obejtivo
+# Objetivo
 
-El objetivo de este proyecto es determinar la ubicación perfecta de una compañía de videojuegos en base a unos criterios:
+El **objetivo** de este proyecto es *determinar la ubicación perfecta de una compañía de videojuegos* en base a unos criterios:
 
 - Los Account managers viajan mucho.
 - El 30% de los empleados de la compañía tiene al menos un hijo/a.
@@ -31,7 +31,7 @@ En 2008 realizé mi Erasmus en Finlandia y por eso he decidido localizar mi empr
    - Numero de empleados: menos de 100
    - Categoría: Videojuegos    
 
-2. Una vez que tengo la ubicación de mi empresa, continuo haciendo llamadas a la [API de Foursquare](https://api.foursquare.com/v2/venues/explore) para conseguir los criterios anteriormente citados (notebooks>002. API Foursquare.ipynb);
+2. Una vez que tengo la ubicación de mi empresa, continuo haciendo llamadas a la [API de Foursquare](https://api.foursquare.com/v2/venues/explore) para conseguir los criterios anteriormente citados, y busc0 (notebooks>002. API Foursquare.ipynb);
     -   Aeropuerto
     -   Guarderías
     -   Discotecas
