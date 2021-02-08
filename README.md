@@ -23,21 +23,22 @@ Los países con más empresas de videojuegos en 2019 son Estados Unidos, Reino U
 En 2008 realizé mi Erasmus en Finlandia y por eso he decidido localizar mi empresa en Helsinki.
 
 1. Filtro siguiendo unos criterios y consigo ubicar mi empresa;
-   -     País; Finlandia
-   -     Oficina; Helsinki
-   -     Fundada; Después del año 2000
-   -     Numero de empleados; menos de 100
-   -     Categoría; Videojuegos    
+   - País: Finlandia
+   - Oficina: Helsinki
+   - Fundada: Después del año 2000
+   - Numero de empleados: menos de 100
+   - Categoría: Videojuegos    
 
-2. Una vez que tengo la ubicación de mi empresa, continuo haciendo llamadas a la API de Foursquare para conseguir los criterios anteriormente citados;
+2. Una vez que tengo la ubicación de mi empresa, continuo haciendo llamadas a la [API de Foursquare] (https://api.foursquare.com/v2/venues/explore) para conseguir los criterios anteriormente citados;
     -   Aeropuerto
     -   Guarderías
     -   Discotecas
     -   Starbucks
     -   Restaurantes veganos
-Con el resultado de las llamadas, calculo la ubicacíon del más cercano a mi oficina.
 
-3. Finalmente, con los 5 puntos de las ubicaciones extraidas, creo un mapa con Folium.
+    Con el resultado de las llamadas, calculo la ubicacíon del más cercano a mi oficina.
+
+1. Finalmente, con los 5 puntos de las ubicaciones extraídas, creo un mapa con Folium.
 
 # Resultado 
 
@@ -45,10 +46,10 @@ Con el resultado de las llamadas, calculo la ubicacíon del más cercano a mi of
 
 # Referencias
 
-[Crunchbase](https://data.crunchbase.com/docs)
-[Fursquare API](https://developer.foursquare.com/)
-[Número de empresas de videojuegos en el mundo, 2019](https://es.statista.com/estadisticas/714837/empresas-de-las-principales-industrias-del-videojuego-del-mundo/)
-[Visit Finland](https://www.visitfinland.com/es/helsinki/)
+* [Crunchbase](https://data.crunchbase.com/docs)
+* [Fursquare API](https://developer.foursquare.com/)
+* [Número de empresas de videojuegos en el mundo en 2019](https://es.statista.com/estadisticas/714837/empresas-de-las-principales-industrias-del-videojuego-del-mundo/)
+* [Visit Finland](https://www.visitfinland.com/es/helsinki/)
 
 
 ![Moomin](/images/moomin.png)
