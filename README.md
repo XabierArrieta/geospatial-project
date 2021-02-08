@@ -1,5 +1,7 @@
 # geospatial-project
 
+
+
 ![Spot](/images/spot.png)
 
 Este es un proyecto que lo he realizado durante el Bootcamp de Data Anatlytics en [Ironhack](https://www.ironhack.com/es/data-analytics) Madrid.
@@ -22,14 +24,14 @@ Los países con más empresas de videojuegos en 2019 son Estados Unidos, Reino U
 
 En 2008 realizé mi Erasmus en Finlandia y por eso he decidido localizar mi empresa en Helsinki.
 
-1. Filtro siguiendo unos criterios y consigo ubicar mi empresa;
+1. Filtro siguiendo unos criterios y consigo ubicar mi empresa (notebooks>01. Filtro empresa.ipynb);
    - País: Finlandia
    - Oficina: Helsinki
    - Fundada: Después del año 2000
    - Numero de empleados: menos de 100
    - Categoría: Videojuegos    
 
-2. Una vez que tengo la ubicación de mi empresa, continuo haciendo llamadas a la [API de Foursquare] (https://api.foursquare.com/v2/venues/explore) para conseguir los criterios anteriormente citados;
+2. Una vez que tengo la ubicación de mi empresa, continuo haciendo llamadas a la [API de Foursquare] (https://api.foursquare.com/v2/venues/explore) para conseguir los criterios anteriormente citados (notebooks>002. API Foursquare.ipynb);
     -   Aeropuerto
     -   Guarderías
     -   Discotecas
@@ -38,7 +40,9 @@ En 2008 realizé mi Erasmus en Finlandia y por eso he decidido localizar mi empr
 
     Con el resultado de las llamadas, calculo la ubicacíon del más cercano a mi oficina.
 
-1. Finalmente, con los 5 puntos de las ubicaciones extraídas, creo un mapa con Folium.
+3. Finalmente, con los 5 puntos de las ubicaciones extraídas, creo un mapa con Folium( 03. Mapa.ipynb).
+   
+   Entrando en la carpeta "notebooks" prodrás encontrar todo el proceso.
 
 # Resultado 
 
