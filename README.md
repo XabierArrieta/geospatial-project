@@ -24,14 +24,14 @@ Los países con más empresas de videojuegos en 2019 son Estados Unidos, Reino U
 
 En 2008 realizé mi Erasmus en Finlandia y por eso he decidido localizar mi empresa en Helsinki.
 
-1. Filtro siguiendo unos criterios y consigo ubicar mi empresa (notebooks>01. Filtro empresa.ipynb);
+1. Filtro con [Mongodb](https://www.mongodb.com/3) siguiendo los siguientes criterios y así ubicar mi empresa (notebooks>01. Filtro empresa.ipynb);
    - País: Finlandia
    - Oficina: Helsinki
    - Fundada: Después del año 2000
    - Numero de empleados: menos de 100
    - Categoría: Videojuegos    
 
-2. Una vez que tengo la ubicación de mi empresa, continuo haciendo llamadas a la [API de Foursquare] (https://api.foursquare.com/v2/venues/explore) para conseguir los criterios anteriormente citados (notebooks>002. API Foursquare.ipynb);
+2. Una vez que tengo la ubicación de mi empresa, continuo haciendo llamadas a la [API de Foursquare](https://api.foursquare.com/v2/venues/explore) para conseguir los criterios anteriormente citados (notebooks>002. API Foursquare.ipynb);
     -   Aeropuerto
     -   Guarderías
     -   Discotecas
@@ -51,6 +51,7 @@ En 2008 realizé mi Erasmus en Finlandia y por eso he decidido localizar mi empr
 # Referencias
 
 * [Crunchbase](https://data.crunchbase.com/docs)
+* [Mongodb](https://www.mongodb.com/3)
 * [Fursquare API](https://developer.foursquare.com/)
 * [Número de empresas de videojuegos en el mundo en 2019](https://es.statista.com/estadisticas/714837/empresas-de-las-principales-industrias-del-videojuego-del-mundo/)
 * [Visit Finland](https://www.visitfinland.com/es/helsinki/)

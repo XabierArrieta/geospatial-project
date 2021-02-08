@@ -27,20 +27,23 @@ def geocode(address):
         return data                        
                            
                            
-def geo_api (empresa):
+def geo_api ():
     load_dotenv()
     tok1 = os.getenv("tok1")
     tok2 = os.getenv("tok2")
     url_query = 'https://api.foursquare.com/v2/venues/explore' 
           
-    criterio = input("¿Qué quieres buscar? \n")
+    criterio = input("¿Qué quieres buscar en Foursquare? \n")
+    limite = input ("¿Cuántas búsquedas quieres que muestre? \n")
+    radio = input("¿En qué radio?(medida = metros) \n")
           
     params = {"client_id" : tok1,
               "client_secret" : tok2,
               "v": "20180323",
               "ll": f"60.17212, 24.94519",
               "query":f"{criterio}",
-              "limit": 10
+              "limit": {limite},
+              "radius": {radio}
             }
     
     resp = requests.get(url = url_query, params=params)
@@ -66,8 +69,37 @@ def geo_api (empresa):
         list_items.append(items_dict)
         
         dataframefinal = pd.DataFrame(list_items)
+        
         gdf = gpd.GeoDataFrame(dataframefinal,geometry = gpd.points_from_xy(dataframefinal.longitud, dataframefinal.latitud))
-        Map(Layer(gdf, popup_hover = [popup_element(f"name",{criterio})]))
+        mapa = Map(Layer(gdf, popup_hover = [popup_element("name",f"{criterio}")]))
+
     
-    return gdf
+    return mapa
+
+
+
+
+
+
+def cercano():
+    
+    cercano2 = db.nurseries.find({"geometry":{"$near":{"type":"Point", "coordinates":[60.171821,24.945167]}}})
+    list(cercano2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
