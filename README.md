@@ -44,7 +44,7 @@ En 2008 realizé mi Erasmus en Finlandia y por eso he decidido localizar mi empr
    
    Entrando en la carpeta "notebooks" prodrás encontrar todo el proceso.
 
-# Resultado 
+# Resultado
 
 ![Helsinki](/images/helsinki.png)
 
