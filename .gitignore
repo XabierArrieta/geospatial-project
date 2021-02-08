@@ -4,3 +4,4 @@
 .jovianrc
 .vscode
 data/companies.json
+.env
