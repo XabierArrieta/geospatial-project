@@ -38,13 +38,54 @@ En 2008 realizé mi Erasmus en Finlandia y por eso he decidido localizar mi empr
     -   Starbucks
     -   Restaurantes veganos
 
-    Con el resultado de las llamadas, calculo la ubicacíon del más cercano a mi oficina.
+    Con el resultado de las llamadas, calculo la ubicacíon del punto más cercano a mi oficina.
 
 3. Finalmente, con los 5 puntos de las ubicaciones extraídas, creo un mapa con Folium( 03. Mapa.ipynb).
    
    Entrando en la carpeta "notebooks" prodrás encontrar todo el proceso.
 
 # Resultado
+
+El **aeropuerto** más cercano es:
+
+    Helsinki Airport (HEL) (Helsinki-Vantaan lentoasema)
+         
+    Distancia: 19,5km
+    Latitud: 60.319129
+    Longitud: 24.968297
+
+La **guarderia** más cercana es:
+
+    Daghemmet B. E. Von Schantz
+
+    Distancia: 2,5km
+    Latitud: 60.158121
+    Longitud: 24.936681
+
+La **discoteca** más cercana es:
+
+    Haven
+
+    Distancia: 1,7km
+    Latitud: 60.16654471941996
+    Longitud: 24.9513536704468
+
+El **Starbucks** más cercano es:
+
+    Starbucks
+
+    Distancia: 500m
+    Latitud: 60.167737
+    Longitud: 24.943369
+
+El **restaurante vegano** más cercano es:
+
+    Pontus
+
+    Distancia: 1,5km
+    Latitud: 60.1587920757416
+    Longitud: 24.94628194859813
+
 
 ![Helsinki](/images/helsinki.png)
 

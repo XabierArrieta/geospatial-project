@@ -16,7 +16,7 @@ import shapely.geometry
 donde = input
 def geocode(address):
     """
-    Metiendo un dirección se obtiene las coordenadas
+    Introduciendo un dirección se obtiene las coordenadas
     """
     data = requests.get(f"https://geocode.xyz/{address}?json=1").json()
     try:
@@ -27,7 +27,13 @@ def geocode(address):
         return data                        
                            
                            
-def geo_api ():
+def geo_api():
+    
+    """
+    Introduciendo un criterio para llamar a la API de Foursquare, obtienes un mapa con los puntos obtenidos
+    
+    """
+    
     load_dotenv()
     tok1 = os.getenv("tok1")
     tok2 = os.getenv("tok2")
@@ -76,22 +82,29 @@ def geo_api ():
     
     return mapa
 
+"""
 
-
-
-
-
-def cercano():
+def mongo(gdf_criterio, db):
     
-    cercano2 = db.nurseries.find({"geometry":{"$near":{"type":"Point", "coordinates":[60.171821,24.945167]}}})
-    list(cercano2)
+
+    Introduciendo un geodaframe de un criterio, crea una colección en Mongo con un indice de 2 esferas y calcula el punto más cercano con unas coordenadas
+    
+    
+    
+    gdf['geometry']=gdf['geometry'].apply(lambda x:shapely.geometry.mapping(x))
+    client = MongoClient()
+    db = client.ironhack
+    collection = {db}
+    collection.create_index ([("geometry", GEOSPHERE)])
+    data = gdf.to_dict(orient='records')
+    collection.insert_many(data)
+    cercano = {db}.find({"geometry":{"$near":{"type":"Point", "coordinates":[f"60.17212, 24.94519"]}}})
+    display(place_near_geo)
+    
+    return cercano
 
 
-
-
-
-
-
+"""
 
 
 
